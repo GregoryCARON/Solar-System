@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    background: #000;
+    color: #e7edf3;
+    font: 14px/1.4 system-ui, Segoe UI, Roboto, Ubuntu, Arial
+}
