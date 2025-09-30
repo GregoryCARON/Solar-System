@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="editor" content="phpstorm">
+	<meta name="editor" content="phpStorm">
+	<meta name="author" content="Gregory CARON">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<link rel="stylesheet" href="style.css">
 	<title>Basic Solar System</title>
@@ -27,16 +28,41 @@
 		<input id="showLabels" type="checkbox" checked>
 		Labels
 	</label>
-	<button id="topBtn" title="Vue du dessus (T)">
+	<button id="topBtn" title="Top View (T)">
 		Top View
 	</button>
+	<span id="realScaleGroup" style="display:inline-flex;align-items:center;gap:8px;">
+  <label>
+    <input type="checkbox" id="realScaleChk">
+    Real Scale
+  </label>
+  <label style="margin-left:12px;">
+    × Sizes
+    <input type="range" id="realScaleRange" min="0.02" max="1.00" step="0.01" value="0.20">
+    <span id="realScaleVal">0.20</span>
+  </label>
+</span>
 	<div id="fps">
 		FPS: —
 	</div>
 </div>
 
 <div id="hint">
-	Mouse : Left=orbiter • Wheel=Zoom • Right/CTRL=pan • **Right+Wheel=Top View** • T=toggle
+	<strong>
+		Mouse
+	</strong> : Left=orbiter •
+	<strong>
+		Wheel
+	</strong>=Zoom •
+	<strong>
+		Wheel+Left clic
+	</strong>=Pan •
+	<strong>
+		Wheel+Right clic / CTRL
+	</strong>=To Top •
+	<strong>
+		T
+	</strong>=toggle
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/three@0.159/build/three.min.js"></script>
